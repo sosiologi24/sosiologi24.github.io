@@ -1,0 +1,185 @@
+/* Umum */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #ffa94d, #ffd000);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* Kontainer Utama */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h1 {
+  color: #f0f8ff;
+}
+h2 {
+  color: #e6a900;
+}
+
+/* Paragraf */
+p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.back-link {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Daftar */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Tombol */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #0073e6;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #005bb5;
+}
+
+/* Laptop */
+/* Media Query for Larger Screens (Laptop) */
+@media (min-width: 1024px) {
+  .about .row .about-img {
+    flex: 1 1 40rem; /* Membuat gambar lebih besar di layar laptop */
+    max-width: 40%; /* Membatasi ukuran gambar agar pas di layar besar */
+  }
+
+  .about .row .content {
+    flex: 1 1 20rem; /* Membuat konten lebih lebar di layar besar */
+    padding: 2rem;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #2b547e;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #ffd900;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar,
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.contact .row {
+  flex-wrap: wrap;
+}
+.contact .row .map img {
+  height: 35rem;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.contact .row form {
+  padding-top: 0;
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

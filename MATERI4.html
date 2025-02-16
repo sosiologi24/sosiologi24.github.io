@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATERI 4</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        color: #333;
+        background: #f4f4f4;
+      }
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 5px solid #4ca1af;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .back-link {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .hidden-section {
+        display: none;
+        margin-top: 20px;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 25px;
+      }
+      .button {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #2980b9, #1c5985);
+        transform: scale(1.05);
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 13px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .fade-in {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Isu-isu Sosial dalam Penelitian Sosiologi</h1>
+      <a href="index.html" class="back-link">&#8592; Kembali</a>
+    </div>
+
+    <div class="container fade-in show" id="section1">
+      <h2>Definisi masalah penelitian</h2>
+      <p>
+        Awal dari suatu penelitian adalah masalah, istilah masalah
+        mengimplikasikan adanya suatu teka-teki yang harus dipecahkan . Masalah
+        merupakan suatu kesulitan yang dirasakan, suatu perasaan tidak
+        menyenangkan atau suatu situasi atau gejala tertentu. Jika ada keraguan,
+        kebingungan, atau kemenduaan tentang suatu fenomen, itu dapat dianggap
+        sebagai masalah penelitian. Setiap situasi yang di dalamnnya terdapat
+        ketaksesuaian (disrepancy) antara aktual dan ideal diharapkan atau
+        antara apa yang ada (what is) dan seharusnya ada (should be) dapat
+        disebut sebagai masalah. Menurut Nachmias dan Nachmias, “ A problem is
+        an intellectual stimulus calling for an answer in the from of scientific
+        inquiry”. Sebagai contoh, “Apahkah kelas sosial memengaruhi perilaku
+        memilih?” adalah masalah yang dapat diinvestigasi melalui penelitian
+        ilmiah.
+      </p>
+
+      <h2>Topik penelitian</h2>
+      <p>
+        Istilah topik penelitian berasal dari kata topoi dalam bahasa Yunani,
+        yang berarti tempat landasan dalam tulis menulis. Berdasarkan Kamus
+        Besar Bahasa Indonesia, topik diartikan sebagai pokok pembicaraan dalam
+        diskusi , karangan, dan sebagainya. Berdasarkan pengertian di atas maka
+        dapat disimpulkan bahwa topik penelitian adalah pokok pembicaraan yang
+        diangkat atau dituliskan dalam sebuah penelitian. Sebuah penelitian
+        tidak dapat dilakukan tanpa adanya topik penelitian yang ditentukan oleh
+        peneliti.
+      </p>
+      <p>
+        Walaupun dalam permulaan penelitian adalah masalah, hal itu harus
+        ditentukan secara jelas dan tepat berkaitan dengan topik atau bidang
+        apa. Memilih satu topik penelitian (research topic), kadang-kadang
+        disebut sebagai fokus untuk studi (focus for the study), ide-ide
+        penelitian (research ideas), isu penelitian (research issues), masalah
+        penelitian (research problem), merupakan langkah awal yang anda lakukan
+        ketika mempersiapkan satu rencana penelitian, tidak terkecuali ketika
+        anda memulai satu pryoyek penelitian, skripsi, tesis, dan disertasi.
+        Topik penelitian merupakan konsep utama yang dibahas dalam suatu
+        penelitian dan penulisan ilmiah.
+      </p>
+      <p>
+        Penggunaan teknologi komputer dalam organisasi, peningkatan
+        produktivitas kelompok kerja, peranan serikat pekerja, konflik
+        organisasional, strategi bisnis, pretasi kerja, dan kepaduan kelompok
+        semuanya merupakan topik penelitian. Di samping itu, setiap hubungan
+        yang meliputi dua orang atau lebih dapat menjadi satu topik yang sah
+        untuk penelitian sosial. Penelitian sosial tidak hanya menguji hubungan
+        antara individu-indivudu, tetapi juga hubungan individu dan keluarganya,
+        struktur sosial informasi dan formal, serta komunitas dan budaya. Topik
+        atau fokus atau isu-isu penelitian merupakan wilayah umum dari
+        penelitian, Biasanya para peneliti menggunakan isu-isu teoritis umum dan
+        hal-hal praktik atau yang membingungkan secara empiris sebagai sumber
+        dari topik. Fokus penelitian dapat muncul dari tinjauan literatur secara
+        ekstensif, dianjurkan oleh rekan, peneliti, atau pembimbing, atau
+        dikembangkan melalui pengalaman nyata. Topik merupakan konsep sentral
+        yang dijelaskan dalam studi (sering dipertukarkan dengan judul
+        penelitian) dan sangat penting kedudukannya dalam penelitian.
+      </p>
+
+      <div class="button-container">
+        <button class="button" onclick="showNext(1)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section2">
+      <h2>Isu-isu Sosial dalam Penelitian Sosiologi: Perspektif Sugiyono</h2>
+      <p>
+        Penelitian sosiologi, menurut Sugiyono, melibatkan berbagai isu sosial
+        yang dapat dianalisis melalui pendekatan kuantitatif dan kualitatif.
+        Isu-isu tersebut mencakup masalah sosial seperti kemiskinan,
+        pengangguran, dan ketidaksetaraan sosial yang mempengaruhi dinamika
+        masyarakat. Selain itu, perubahan sosial, seperti dampak globalisasi dan
+        urbanisasi, turut menjadi fokus utama dalam memahami transformasi
+        struktur sosial. Interaksi sosial juga menjadi area penting dalam
+        penelitian, mengkaji sosialisasi, konflik sosial, dan pengaruh media
+        sosial terhadap identitas individu. Isu ketidaksetaraan, baik dalam
+        bentuk gender, ras, maupun akses pendidikan, menggambarkan ketimpangan
+        yang ada dalam distribusi sumber daya sosial. Struktur sosial, seperti
+        mobilitas sosial dan peran institusi, juga menjadi kajian untuk memahami
+        bagaimana masyarakat terorganisasi. Teori-teori sosiologi, seperti
+        fungsionalisme, teori konflik, dan interaksionisme simbolik, digunakan
+        untuk menganalisis fenomena sosial ini. Tidak kalah penting, etika dalam
+        penelitian sosial menjadi pedoman untuk menjaga integritas, perlindungan
+        partisipan, serta keadilan dalam setiap proses penelitian.
+      </p>
+
+      <h2>Sumber topik dan masalah penelitian</h2>
+      <p>
+        Dari mana Anda menemukan topik atau ide-ide atau isu-isu atau masalah
+        penelitian? Tidak ada jawaban definitif terhadap pertanyaan ini. Namun,
+        umumnya ada dua sumber informasi tentang satu topik dan masalah
+        penelitian, yakni sumber teoritis dan praktis.
+      </p>
+      <li><b>1. Sumber Teoritis</b></li>
+      <p>
+        Seseorang mungkin menemukan satu ide atau masalah penelitian bersumber
+        dari teori atau tinjauan literatur. Masalah penelitian yang bersumber
+        dari teori atau tinjauan literatur ditemukan dalam berbagai sumber bahan
+        tertulis yang dikelompokkan atas secondary sources materials, seperti
+        buku teks; dan primary sources materials, seperti monograp, jurnal
+        profesional, bibliografi, abstrak, atau statistik. Dalam buku teks
+        manajemen atau perilaku organisasi, misalnya, banyak teori relevan dari
+        mana masalah dapat ditemukan seperti teori motivasi, teori kepemimpinan,
+        teori komunikasi, dan teori kepuasan kerja. Dari hasil membaca literatur
+        tentang motivasi kerja, misalnya, ditemukan poposisi: "karyawan yang
+        memiliki motivasi kerja yang tinggi memiliki tingkat kemangkiran yang
+        rendah". Berdasarkan informasi teoritis tersebut dapat diturunkan
+        masalah penelitian, yaitu: "sejauh mana pengaruh tingkat motivasi kerja
+        terhadap tingkat kemangkiran karyawan di organisasi X?".
+      </p>
+      <p>
+        Laporan-laporan penelitian yang dipublikasi atau tidak dipublikasi juga
+        merupakan sumber masalah penelitian karena dari suatu penelitian
+        biasanya dapat ditemukan hal yang perlu diteliti lebih lanjut (mungkin
+        direkomendasikan peneliti untuk diteliti lebih lanjut oleh orang lain)
+        atau dijumpai masalah-masalah baru yang perlu diteliti. Dari
+        laporan-laporan penelitian yang dipublikasi sebagai tangan pertama
+        pengobservasi perilaku, Anda membaca perilaku sosial tertentu yang Anda
+        juga menjadi tertarik untuk menelitinya pada subjek yang berbeda. Jurnal
+        ilmiah (schol-arly journalsi juga sering dijadikan sebagai sumber dari
+        mana masalah penelitian ditemukan. Meskipun buku teks-buku teks
+        tersedia, informasi yang termuat di dalamnya cenderung menjadi usang.
+        Untuk teori-teori dan penelitian-penelitian terbaru tentang subjek
+        tertentu, peneliti menemukannya dalam jurnal-jurnal ilmiah. Jurnal
+        ilmiah sering memuat artikel yang membahas aspek-aspek tertentu dari
+        suatu ilmu pengetahuan, bahkan menyajikan hasil-hasil penelitian yang
+        lebih spesifik. Akhirnya, pertemuan ilmiah juga dapat menjadi sumber
+        dari satu ide atau topik dan masalah. Dari pertemuan ilmiah, seperti
+        seminar, simposium, lokakarya, banyak ahli mengungkap masalah ke
+        permukaan yang bernilai untuk diteliti.
+      </p>
+
+      <li><b>2. Sumber praktis</b></li>
+      <p>
+        Sering ide penelitian muncul dari kebutuhan untuk memecahkan
+        masalah-masalah praktik. Peneliti menemukan masalah dari kejadian
+        empiris terutama untuk penelitian terapan yang problem oriented. Ide
+        atau masalah praktik dapat diperoleh melalui pengalaman pribadi peneliti
+        atau dari hasil studi pendahuluan atau penjajakan, baik yang dilakukan
+        melalui observasi sistematis atau tak-sistematis. Observasi tak
+        sistematis diperoleh secara kebetulan atas suatu kejadian. Observasi
+        sistentalis mungkin dilakukan dengan secara khusus, misalnya Anda
+        memutuskan untuk mempelajari perilaku tertentu dan Anda memilih untuk
+        mengobservasi perilaku tersebut melalui studi penjajakan. Melalui studi
+        penjajakan akan mungkin ditemukan masalah yang sebenarnya belum
+        terungkap. Informasi ini diperoleh dari para pelaku atau yang langsung
+        terlibat dalam proses di mana masalah tersebut terjadi.
+      </p>
+      <p>
+        Pernyataan-pernyataan para pemegang kekuasaan atau pejahat atau tokoh,
+        baik pelaku publik ataupun birokrasi pemerintah dan pelaku bisnis, dapat
+        dijadikan sebagai sumber masalah pragmatis. Biasanya, mereka
+        mengungkapkan per masalahan yang dialami atau dihadapi secara langsung
+        secara lebih terperinci dan jelas. Jika para pemegang kekuasaan
+        menyatakan ada masalah berarti masalah tersebut ada, meskipun hanya dari
+        sudut pandang mereka sebagai pemegang kekuasaan. Jadi, para pelaku di
+        lingkungan organisasi, secara pribadi atau kelompok, dapat menjadi
+        sumber bagi kita untuk menemukan masalah penelitian ketika mereka
+        mengungkapkan berbagai penyimpangan atau ketidaksesuaian antara harapan
+        dan kenyataan di lingkungan kerja mereka.
+      </p>
+      <p>
+        Dari konvensi dan pertemuan profesional dan media massa pun dapat
+        diperoleh ide atau isu penelitian. Para pakar dalam suatu konvensi dan
+        pertemuan profesional sering mengungkapkan isu-isu yang menarik bagi
+        kita untuk diteliti, baik yang dinyatakan secara lisan maupun yang
+        termuat dalam makalah mereka. Media massa sering memuat berita tentang
+        berbagai masalah di suatu tempat tertentu, baik lingkungan organisasi
+        maupun masyarakat. Ini dapat dijadikan sebagai sumber masalah untuk
+        kemudian dikembangkan sebagai masalah penelitian. Akhirnya, pengalaman
+        pribadi juga dapat dijadikan sebagai sumber masalah penelitian. Ilham
+        tentang suatu masalah dapat muncul karena pengamatan pribadi tentang
+        suatu gejala: berdasarkan pengalaman pribadi memungkinkan seseorang
+        mampu melihat dan mengungkap masalah, dan berdasarkan informası dari
+        penga laman pribadi orang lain didapat satu masalah kritis dalam suatu
+        organisasi.
+      </p>
+      <div class="button-container">
+        <button class="button" onclick="showNext(2)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section3">
+      <h2>Jenis jenis isu-isu penelitian</h2>
+      <p>
+        Isu penelitian sering kali muncul dari tantangan atau ketidakpastian
+        yang dihadapi dalam suatu bidang ilmu. Berikut adalah beberapa jenis isu
+        penelitian berdasarkan kategori utama: 1. Isu-isu Metodologis dalam
+        Penelitian Isu metodologis berkaitan dengan pemilihan dan penerapan
+        metode penelitian yang tepat dalam mengumpulkan, menganalisis, serta
+        menginterpretasi data. Beberapa isu metodologis yang sering muncul
+        adalah: Validitas dan reliabilitas data → Bagaimana memastikan bahwa
+        data yang dikumpulkan dapat dipercaya dan konsisten dalam menjelaskan
+        fenomena yang diteliti? Pemilihan metode yang tepat → Apakah penelitian
+        sebaiknya menggunakan metode kuantitatif, kualitatif, atau kombinasi
+        (mixed-method)? Kesulitan dalam pengumpulan data → Apakah ada kendala
+        dalam mengakses data, seperti keterbatasan responden, biaya, atau
+        regulasi tertentu? Kesalahan dalam analisis data → Bagaimana cara
+        mencegah bias atau kesalahan dalam pengolahan data statistik dan
+        kualitatif?
+      </p>
+      <p>
+        Contoh: Seorang peneliti yang meneliti dampak media sosial terhadap
+        kesehatan mental mungkin menghadapi tantangan dalam menentukan indikator
+        psikologis yang dapat diukur secara valid dan reliabel.
+      </p>
+      <p>
+        2. Isu Etika dalam Penelitian Isu etika muncul ketika penelitian
+        berpotensi melanggar hak-hak individu atau kelompok yang terlibat.
+        Beberapa isu etika yang sering muncul meliputi: Informed consent
+        (persetujuan partisipan) → Apakah subjek penelitian telah diberi
+        informasi yang cukup sebelum berpartisipasi? Kerahasiaan dan
+        perlindungan data pribadi → Bagaimana memastikan bahwa data responden
+        tidak disalahgunakan? Plagiarisme dan fabrikasi data → Apakah penelitian
+        ini dilakukan dengan jujur tanpa menyalin atau memalsukan data?
+        Eksploitasi kelompok rentan → Apakah penelitian dilakukan tanpa
+        merugikan kelompok rentan seperti anak-anak atau masyarakat miskin?
+        Contoh:
+      </p>
+      <p>
+        Contoh: Sebuah penelitian medis yang menguji efektivitas obat baru harus
+        memastikan bahwa subjek uji klinis memahami risiko yang mereka hadapi
+        dan tidak dipaksa untuk berpartisipasi.
+      </p>
+      <p>
+        3. Isu Sosial dan Ekonomi dalam Penelitian Isu sosial dan ekonomi sering
+        kali menjadi dasar penelitian yang bertujuan untuk memahami serta
+        mengatasi permasalahan di masyarakat. Beberapa isu yang umum adalah:
+        Kesenjangan pendidikan → Mengapa akses pendidikan masih terbatas bagi
+        kelompok tertentu? Ketimpangan ekonomi → Bagaimana cara mengatasi
+        kesenjangan pendapatan antara masyarakat miskin dan kaya? Kesejahteraan
+        tenaga kerja → Apakah sistem ketenagakerjaan saat ini sudah adil dan
+        mendukung kesejahteraan pekerja? Contoh: Penelitian tentang upah minimum
+        dan kesejahteraan pekerja di sektor informal dapat membantu memahami
+        bagaimana kebijakan ekonomi mempengaruhi standar hidup masyarakat.
+      </p>
+      <p>
+        4. Isu Teknologi dan Digitalisasi dalam Penelitian Kemajuan teknologi
+        membawa serta berbagai tantangan baru yang dapat menjadi isu penelitian,
+        seperti: Keamanan data dan privasi → Sejauh mana platform digital
+        menjaga privasi pengguna? Kecerdasan buatan (AI) dan etika → Apakah AI
+        dapat menggantikan pekerjaan manusia secara adil? Dampak media sosial
+        terhadap kesehatan mental → Bagaimana penggunaan media sosial
+        mempengaruhi kesejahteraan psikologis individu? Contoh: Penelitian
+        tentang bagaimana algoritma media sosial memengaruhi opini publik dapat
+        membantu mengungkap dampak teknologi terhadap demokrasi dan pola pikir
+        masyarakat.
+      </p>
+      <p>
+        5. Isu Lingkungan dan Keberlanjutan dalam Penelitian Dengan meningkatnya
+        perhatian terhadap perubahan iklim dan degradasi lingkungan, berbagai
+        isu penelitian muncul dalam bidang ini, seperti: Perubahan iklim dan
+        dampaknya → Bagaimana perubahan iklim mempengaruhi pola kehidupan
+        manusia? Energi terbarukan → Bagaimana cara meningkatkan efisiensi
+        energi ramah lingkungan? Polusi dan limbah industri → Apa strategi
+        terbaik untuk mengurangi polusi dan dampaknya terhadap Kesehatan?
+        Contoh: Penelitian mengenai efektivitas kebijakan pengurangan plastik
+        sekali pakai dapat membantu dalam merancang strategi keberlanjutan yang
+        lebih baik.
+      </p>
+
+      <h2>Cara menghindari atau mengatasi isu-isu penelitian</h2>
+      <p>
+        Untuk menghindari atau mengatasi isu-isu yang muncul dalam penelitian,
+        ada beberapa langkah yang bisa diambil oleh peneliti: 1. Mengikuti Etika
+        Penelitian: Kejujuran dan integritas: Pastikan untuk selalu menggunakan
+        data yang akurat dan tidak memanipulasi hasil penelitian. Hindari
+        plagiarisme dengan selalu mencantumkan referensi yang tepat. Persetujuan
+        etik: Jika penelitian melibatkan subjek manusia atau hewan, pastikan
+        memperoleh izin dan persetujuan etik terlebih dahulu dari komite etika
+        yang relevan.
+      </p>
+      <p>
+        2. Memperhatikan Penggunaan Teknologi: Keamanan data: Pastikan untuk
+        menjaga keamanan data penelitian, terutama yang berhubungan dengan data
+        pribadi atau sensitif. Penerapan teknologi yang bertanggung jawab: Dalam
+        penelitian tentang AI atau teknologi baru, pastikan untuk
+        mempertimbangkan dampak sosial, etika, dan keamanan. Misalnya, dalam
+        pengembangan AI, penting untuk menghindari bias dalam algoritma.
+      </p>
+      <p>
+        3. Penelitian yang Bertanggung Jawab terhadap Lingkungan: Praktik ramah
+        lingkungan: Dalam penelitian yang terkait dengan lingkungan, hindari
+        eksploitasi berlebihan terhadap sumber daya alam. Gunakan metode yang
+        ramah lingkungan, seperti penelitian yang berbasis pada energi
+        terbarukan atau meminimalkan polusi. Penggunaan data ilmiah yang valid:
+        Pastikan data dan temuan penelitian yang digunakan terkait dengan
+        perubahan iklim dan lingkungan diambil dari sumber yang sahih dan dapat
+        dipertanggungjawabkan.
+      </p>
+
+      <div class="button-container">
+        <button class="button" onclick="goBack()">Kembali ke Awal</button>
+      </div>
+    </div>
+
+    <script>
+      function showNext(section) {
+        document.getElementById('section' + section).style.display = 'none';
+        document.getElementById('section' + (section + 1)).style.display =
+          'block';
+        document
+          .getElementById('section' + (section + 1))
+          .classList.add('show');
+      }
+
+      function goBack() {
+        document.querySelectorAll('.container').forEach((el, index) => {
+          el.style.display = index === 0 ? 'block' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>

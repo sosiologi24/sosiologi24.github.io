@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPS</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        color: #333;
+        background: #f4f4f4;
+      }
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 5px solid #4ca1af;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .back-link {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .hidden-section {
+        display: none;
+        margin-top: 20px;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 25px;
+      }
+      .button {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #2980b9, #1c5985);
+        transform: scale(1.05);
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 13px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .fade-in {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>PENDEKATAN PENELITIAN SOSIAL</h1>
+      <a href="index.html" class="back-link">&#8592; Kembali</a>
+    </div>
+
+    <div class="container fade-in show" id="section1">
+      <h2>Pendahuluan</h2>
+      <p>
+        Penelitian Sosial (social research) adalah peneyelidikan tentang satu
+        gejala sosial maupun hubungan antara dua atau lebih gejala sosial melalu
+        aplikasi sistematis dari metode penelitian. penelitian sosial memiliki
+        perhatian dengan pengumpulan data yang dapat membantu kita menjawab
+        pertanyaan tentang berbagai aspek perihal fenomena sosial dan
+        masyarakat. penelitian sosial merupakan satu tipe penelitian yang
+        dilakukan oleh ilmuwan sosial (sosial scientist) untuk menjawab
+        pertanyaan-pertanyaan tentang berbagai aspek sosial sehingga kita dapat
+        memahaminya.
+      </p>
+
+      <h2>MATERI</h2>
+      <p>
+        Metode atau pendekatan ilmiah sebagai prosedur yang sistematis dan
+        terstandar serta menggunakan pembuktian-pembuktian objektif merupakan
+        suatu proses yang sangat teratur yang mengikuti empat tahap-tahap urutan
+        yakni :
+      </p>
+      <ul>
+        <li>
+          • Langkah pertama adalah <strong>observing a phenomenon </strong>:
+          mengamati gejala atau perilaku yang menjadi perhatian untuk pengenalan
+          masalah.
+        </li>
+        <li>
+          • Langkah kedua adalah
+          <strong>formulating tentative explanation</strong> : mengembangkan
+          satu atau lebih penjelasan tentatif atau hipotesis yang tampak
+          konsisten dengan observasi.
+        </li>
+        <li>
+          • Langkah ketiga adalah
+          <strong>further observing and experimenting</strong> : melakukan
+          observasi atau eksperimen serta bisa keduanya.
+        </li>
+        <li>
+          • Langkah keempat adalah
+          <strong>refining and retesting explanations</strong> : proses
+          perbaikan kembali dan pengujian kembali penjelasan berdasarkan
+          konfirmasi hipotesis.
+        </li>
+      </ul>
+      <p>
+        Tahap-tahap dalam melakukan penelitian harus terlihat familier dan
+        secara langsung paralel dengan metode ilmiah.
+      </p>
+
+      <div class="button-container">
+        <button class="button" onclick="showNext(1)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section2">
+      <p>
+        Sistem-sistem teori dalam sosiologi mengadopsi pendekatan positivis jika
+        diasumsikan bahwa perilaku dalam dunia sosial dan dunia alam diatur oleh
+        prinsip-prinsip yang sama, metodologi imu-ilmu alam adalah yang cocok
+        untuk mempelajari “human society”. Dengan demikian positivisme
+        menggambarkan pendekatan baru terhadap pengetahuan yang mendahului
+        kehidupan intelektual dalam tahap positif, mungkin salah satu ciri yang
+        paling penting dalam sosiologi positivistis ialah keyakinan bahwa
+        fenomena sosial itu memiliki pola dan tunduk pada hukum-hukum
+        deterministis seperti layaknya hukum-hukum yang mengatur ilmu alam.
+      </p>
+      <li>
+        • Dari positivisme ke paradigma kuantitatif Pendekatan positivisme atau
+        logika positivis, seperti yang di kembangkan oleh Comte (dan diikuti
+        juga oleh Durkheim dan juga para sosiolog positivistis kontemporer
+        lainnya), berdampak terhadap metodologi studi sosial kontemporer dan
+        menjadi bagian yang tidak terpisahkan dalam perkembangan metode ilmiah
+        dan metodologi penelitian sosial. Pendekatan positivisme adalah satu
+        pendekatan dalam penelitian yang sangat tua dan sangat luas digunakan
+        dan menjadi suatu paradigma dalam penelitian kontemporer namun
+        sehubungan dengan hal tersebut, peneliti-peneliti positivis suka
+        menggunakan logika deduktif dengan presisi data kuantitatif hasil
+        observasi empiris dan lebih serig menggunakan eksperimen, survei, dan
+        statistik. Dalam paradigma positivistis atau kuantitatif, suatu teori
+        harus dapat diuji secara empiris. Ini disebut sebagai “the
+        deductive-nomological model of explanation” dan “the
+        hypothetice-deductive model of theory development”. Dalam pendekatan
+        positivitis, deduksi memainkan satu peranan sentral dalam laporan
+        penjelasan dan positivis mangadopsi apa yang telah di istilahkan
+        “covering law” atau “deductive-nomological model”dari penjelasan imiah.
+        Hukum ini tampak dari pernyataan kondisional bentuk “ Jika X terjadi, Y
+        juga akan terjadi”.
+      </li>
+      <li>
+        • Perbedaan paradigma kuantitatif dan kualitatif Banyak penulis tentang
+        isu-isu metodologi membedakan antara penelitian kuantitatif dan
+        kualitatif. Penelitian kuantitatif dinyatakan sebagai paradigma
+        positivistis sedangkan penelitian kualitatif dinyatakan sebagai
+        paradigma fenomenologis atau naturalistis.
+      </li>
+      <h2>Penelitian kuantitatif</h2>
+      <p>
+         dapat dikonstruksi sebagai strategi penelitian yang menekankan
+        kuantifikasi dalam pengumpulan dan analisis data dengan pendekatan
+        deduktif. Oleh karena itu, penelitian kuantitatif merupakan sebuah
+        pneyelidikan tentang masalah sosial berdasarkan pada pengujian sebuah
+        teori yang terdiri dari variabel-variabel, diukur dengan angka, dan
+        dianalisis dengan prosedut statistik untuk menentukan apakah
+        generalisasi prediktif teori tersebut benar.
+      </p>
+      <h2>Penelitian kualitatif</h2>
+      <p>
+         dapat dikonstruksi sebagai satu strategi penelitian yang biasanya
+        menekankan kata-kata daripada kuantifikasi dalam pengumpulan dan
+        analisis data, menekankan pendekatan induktif. Oleh karena itu,
+        Penelitian kualitatif didefinisikan sebagai suatu proses penyelidikan
+        untuk memahami masalah sosial berdasarkan pada penciptaan gambaran
+        holistik lengkapyang dibentuk dengan kata-kata, melaporkan pandangan
+        informan secara terperinci, dan disusun dalam sebuah latar alamiah.
+      </p>
+      <p>
+        Adanya perbedaan antara penelitian kuantitatif dan kualitatif dalam
+        strategi penelitian berguna untuk mengorganisasi metode penelitian dan
+        pendekatan untuk analisis data. Sumber buku : Metode Penelitian Sosial
+        Dr. Ulber Silalahi, MA.
+      </p>
+      <div class="button-container">
+        <button class="button" onclick="goBack()">Kembali ke Awal</button>
+      </div>
+    </div>
+
+    <script>
+      function showNext(section) {
+        document.getElementById('section' + section).style.display = 'none';
+        document.getElementById('section' + (section + 1)).style.display =
+          'block';
+        document
+          .getElementById('section' + (section + 1))
+          .classList.add('show');
+      }
+
+      function goBack() {
+        document.querySelectorAll('.container').forEach((el, index) => {
+          el.style.display = index === 0 ? 'block' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>

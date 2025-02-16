@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPS</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        color: #333;
+        background: #f4f4f4;
+      }
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 5px solid #4ca1af;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .back-link {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .hidden-section {
+        display: none;
+        margin-top: 20px;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 25px;
+      }
+      .button {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #2980b9, #1c5985);
+        transform: scale(1.05);
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 13px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .fade-in {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>MATERI ETIKA PENELITIAN</h1>
+      <a href="index.html" class="back-link">&#8592; Kembali</a>
+    </div>
+
+    <div class="container fade-in show" id="section1">
+      <h2>A. Pengertian Etika Penelitian</h2>
+      <p>
+        Secara etimologi kata “etika” berasal dari bahasa Yunani yaitu ethos
+        dalam bentuk tunggal yang mempunyai banyak arti seperti, tempat tinggal
+        yang biasa, padang rumput, kandang, kebiasaan, adat, akhlak,
+        watak,perasaan, sikap maupun cara berpikir. Dalam bentuk jamak yaitu ta
+        etha yang artinya adalah adat kebiasaan. Arti terakhir inilah yang
+        menjadi latar belakang bagi terbentuknya istilah etika yang oleh filsuf
+        Yunani besar Aristoteles sudah dipakai untuk menunjukkan filsafat moral.
+        Sehingga, etika berarti ilmu tentang apa yang biasa dilakukan atau ilmu
+        tentang adat kebiasaan. (Sumber: MODUL ETIKA PENELITIAN - Dr. Drg Wiworo
+        Haryani, M.Kes dan Drh. Idi Setyobroto, M.Kes). Etika penelitian
+        merupakan standar tata perilaku peneliti selama melakukan penelitian.
+        Etika penelitian mengatur berbagai hal yang harus menjadi pedoman
+        perilaku peneliti mulai dari menyusun detail penelitian, mengumpulkan
+        data di lapangan, melakukan wawancara, memberi angket, melakukan
+        pengamatan, meminta datang pendukung ketika menyusun laporan penelitian,
+        sampai publikasi hasil penelitian. (Sumber: METODOLOGI PENELITIAN SOSIAL
+        - Dr. Drs. Ismail Nurdin, M.Si, Dra. Sri Hartati, M.Si · 2019 Prinsip
+        Etik). Etika penelitian berfokus pada “kompas moral” yang mengatur
+        interaksi antara peneliti dan objek penelitian. Selain itu, etika ini
+        juga mencakup pelaporan, publikasi, penggunaan hasil penelitian, dan
+        pengelolaan data. Etika penelitian termasuk dalam kategori etika
+        normatif, yang mengacu pada tiga kerangka berpikir moral:
+      </p>
+      <li>
+        1. Etika Konsekuensialis : Menilai tindakan berdasarkan dampaknya, tanpa
+        mempertimbangkan motivasi atau metode. Misalnya, melanggar janji
+        kerahasiaan bisa diterima jika itu untuk mencegah bahaya.
+      </li>
+      <li>
+        2. Etika Nonkonsekuensialis : Menilai kebenaran dengan memperhatikan
+        motif dan cara suatu tindakan dilakukan, meskipun tidak menghasilkan
+        manfaat terbesar.
+      </li>
+      <li>
+        3. Etika Keutamaan: Menilai tindakan berdasarkan keutamaan moral dan
+        kebijaksanaan praktis, yang memfokuskan pada sifat-sifat baik yang
+        dimiliki seseorang. (Sumber: Buku kode etik dalam penelitian ilmu sosial
+        di Indonesia.)
+      </li>
+
+      <h2>B. Prinsip Etika Penelitian</h2>
+      <p>
+        Semua riset yang melibatkan manusia sebagai subyek, harus berdasarkan
+        empat prinsip dasar Etika Penelitian (EP), yaitu:
+      </p>
+      <ul>
+        <li>
+          <b
+            >1. Menghormati atau menghargai orang ada dua hal yang perlu
+            diperhatikan</b
+          >, yaitu <li>a. Peneliti harus mempertimbangkan secara mendalam terhadap
+            kemungkinan bahaya dan penyalahgunaan penelitian</li> <li>b. Terhadap subyek
+                penelitian yang rentan terhadap bahaya penelitian, perlu perlindungan</li>
+        </li>
+       <li><b>2. Manfaat</b>
+        Keharusan secara etik untuk mengusahakan manfaat sebesar-besarnya dan memperkecil kerugian atau risiko bagi subyek dan memperkecil kesalahan penelitian. Hal ini memerlukan desain penelitian yang tepat dan akurat, peneliti yang berkompeten, serta subyek terjaga keselamatan dan kesehatannya. Deklarasi Helsinki butir 1.4: melarang pelaksanaan yang mendatangkan risiko. Subyek sifatnya sukarela yang harus dihormati.
+        </li>
+        <li><b>3. Bahaya</b>
+            Salah satu butir yang utama adalah mengurangi bahaya terhadap subyek serta melindungi subyek
+            </li>
+            <li><b>4. Keadilan</b>
+                Semua subyek diperlakukan dengan baik. Ada keseimbangan manfaat dan risiko. Risiko yang dihadapi sesuai dengan pengertian sehat, yang mencakup: fisik, mental, dan sosial.
+                 (Sumber: Metodologi Penelitian Biomedis - Prof. Dr. H. R. Muchtan Sujatno, dr., SpFK. (K) ).
+                </li>
+
+      </ul>
+      <p>
+        Setiap penelitian kesehatan yang mengikut sertakan manusia sebagai subjek penelitian wajib didasarkan pada tiga prinsip etik sebagai berikut.
+      </p>
+      <ul>
+        <li>1.	Respect for persons (other)
+            Hal ini bertujuan menghormati otonomi untuk mengambil keputusanmandiri (self determination) dan melindungi kelompok-kelompokdependent (tergantung) atau rentan (vulnerable) dari penyalahgunaan(harm and abuse).
+            </li>
+            <li>2. Beneficience and Non Maleficence
+                Prinsip berbuat baik, memberikan manfaat yang maksimal dan risiko yang minimal.
+                </li>
+                <li>3. Prinsip etika keadilan (Justice)
+                    Prinsip ini menekankan setiap orang layak mendapatkan sesuatu sesuaidengan haknya menyangkut keadilan destributif dan pembagian yangseimbang (equitable).
+                    (Sumber: MODUL ETIKA PENELITIAN - Dr. Drg Wiworo Haryani, M.Kes dan Drh. Idi Setyobroto, M.Kes) 
+                    </li>
+      </ul>
+
+      <div class="button-container">
+        <button class="button" onclick="showNext(1)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section2">
+      <h2>C . Etika penelitian yang perlu di taati para peneliti
+
+      </h2>
+      <ul>
+        <li>1.	bidang yang di teliti sesuai dengan keahlian peneliti</li>
+        <li>2.	peneliti harus merahasiakan semua informasi yang di peroleh dari responden  sehingga nama-nama responden harus dituliskan dalam bentuk kode-kode atau inisial.</li>
+<li>3.	 peneliti tidak menuntut responden untuk bertanggung jawab atas informasi yang telah di sampaikanya;</li>    
+<li>4.	Peneliti tidak memaksakan kehendaknya agar responden memberikan informasi kepadanya. </li>    
+<li>5.	peneliti tidak mengubah informasi responden dengan pengertian yang berbeda atau bertolak belakang atau mengganti angka di dalam tabulasi data yang berbeda dengan angka responden sebenarnya (peneliti boleh salah semisal mungkin karena manusiawi, tetapi tidak boleh bohong).</li>
+</ul>
+<p>(Sumber referensi: buku Prof.Dr.Husaini Usman,M.Pd.,M.T.purnomo Setiady Akbar,M.Pd). </p>
+<p> Aspek penting dalam etika penelitian adalah kejujuran, yang mencakup menghindari plagiasi dan memanipulasi hasil penelitian. Peneliti juga harus menjaga kerahasiaan data dan menunjukkan sikap sopan santun kepada semua pihak yang terlibat. Selain itu, dalam penulisan laporan penelitian, informasi yang disajikan harus akurat dan tidak dipalsukan. Peneliti juga dilarang melakukan pemerasan terhadap responden atau tenaga pengumpul data, dan kesepakatan yang jelas harus dibuat sebelum penelitian dimulai. (Sumber: METODOLOGI PENELITIAN SOSIAL - Dr. Drs. Ismail Nurdin, M.Si, ‎Dra. Sri Hartati, M.Si · 2019) 
+     </p>
+      <div class="button-container">
+        <button class="button" onclick="goBack()">Kembali ke Awal</button>
+      </div>
+    </div>
+
+    <script>
+      function showNext(section) {
+        document.getElementById('section' + section).style.display = 'none';
+        document.getElementById('section' + (section + 1)).style.display =
+          'block';
+        document
+          .getElementById('section' + (section + 1))
+          .classList.add('show');
+      }
+
+      function goBack() {
+        document.querySelectorAll('.container').forEach((el, index) => {
+          el.style.display = index === 0 ? 'block' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>

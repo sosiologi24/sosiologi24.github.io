@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPS</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        color: #333;
+        background: #f4f4f4;
+      }
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 5px solid #4ca1af;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .back-link {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .hidden-section {
+        display: none;
+        margin-top: 20px;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 25px;
+      }
+      .button {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #2980b9, #1c5985);
+        transform: scale(1.05);
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 13px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .fade-in {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>PENELITIAN SOSIAL</h1>
+      <a href="index.html" class="back-link">&#8592; Kembali</a>
+    </div>
+
+    <div class="container fade-in show" id="section1">
+      <h2>Unsur-unsur penelitian</h2>
+      <ul>
+        <li>• Judul penelitian</li>
+        <li>• Kata pengantar</li>
+        <li>• Pendahuluan</li>
+        <li>• Kajian teori</li>
+        <li>• Metode penelitian</li>
+        <li>• Hasil penelitian/Pembahasan</li>
+        <li>• Penutup</li>
+      </ul>
+      <h2>Konsep penelitian</h2>
+      <ul>
+        <li>• Pengenalan/Pendefisian masalah</li>
+        <li>• Perumusan hipotesis</li>
+        <li>• Pengumpulan data</li>
+        <li>• Analisis data</li>
+        <li>• Pernyataan kesimpulan</li>
+      </ul>
+
+      <div class="button-container">
+        <button class="button" onclick="showNext(1)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section2">
+      <h2>Peranan penelitian sosial</h2>
+      <ul>
+        <li>
+          <b>1. Memahami fenomena sosial</b>
+          Teori penelitian sosial membantu penliti untuk memahami fenomena
+          sosial yang kompleks dan rumit.
+        </li>
+        <li>
+          <b>2. Mengembangkan kerangka konsep.</b>
+          Membantu peneliti untuk mengembangka kerangka konsep yang sistematis
+          dan logis untuk memahami fenomena sosial.
+        </li>
+        <li>
+          <b>3. Mengidentifikasi variabel penelitian</b>
+          Mengindetifikasi variabel yang relevan dan penting untuk dipelajari.
+        </li>
+        <li>
+          <b>4. Mengembangkan Hipotesis penelitian</b>
+          Membantu penelitian untuk mengembangkan hipotesis yang spesifik dan
+          dapat diuji.
+        </li>
+        <li>
+          <b>5. Memilih metode penelitian</b>
+          Peneliti metode penelitian yang tepat dan sesuai dengan tujuan
+          penelitian
+        </li>
+        <li>
+          <b>6. Menganalisis data penelitian </b>
+          Membantu peneliti untuk menganalisis data penelitian secara sistematis
+          dan logis
+        </li>
+        <li>
+          <b>7. Menginterprestasikan hasil penelitian</b>
+          Membantu peneliti untukmenginterprestasikan hasil penelitian secara
+          akurat dan relevan
+        </li>
+        <li>
+          <b>8. Mengembangkan teori baru</b> Teori penelitian sosial membantu
+          peneliti untuk mengembangkan teori baru yang lebih akurat dan relevan
+          untuk memahami fenomena sosial
+        </li>
+      </ul>
+      <div class="button-container">
+        <button class="button" onclick="goBack()">Kembali ke Awal</button>
+      </div>
+    </div>
+
+    <script>
+      function showNext(section) {
+        document.getElementById('section' + section).style.display = 'none';
+        document.getElementById('section' + (section + 1)).style.display =
+          'block';
+        document
+          .getElementById('section' + (section + 1))
+          .classList.add('show');
+      }
+
+      function goBack() {
+        document.querySelectorAll('.container').forEach((el, index) => {
+          el.style.display = index === 0 ? 'block' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradigma Penelitian</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        color: #333;
+        background: #f4f4f4;
+      }
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 5px solid #4ca1af;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .back-link {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .hidden-section {
+        display: none;
+        margin-top: 20px;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 25px;
+      }
+      .button {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #2980b9, #1c5985);
+        transform: scale(1.05);
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+
+        .header {
+          padding: 30px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 13px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .fade-in {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Paradigma Penelitian</h1>
+      <a href="index.html" class="back-link">&#8592; Kembali</a>
+    </div>
+    </div>
+
+    <div class="container fade-in show" id="section1">
+      <h2>Pendahuluan</h2>
+      <p>
+        Paradigma penelitian sosial-budaya belum bergeser dari paradigma
+        perubahan atau paradigma historis, ditambah dengan beberapa varian
+        paradigma yang positivistik seperti analisis variabel dan
+        fungsionalisme-struktural.
+      </p>
+
+      <h2>Sejarah Paradigma</h2>
+      <p>
+        Istilah paradigma pertama kali dipopulerkan oleh Thomas Kuhn dalam
+        bukunya <i>The Structure of Scientific Revolution</i> (1970). Kuhn
+        menjelaskan bahwa revolusi ilmiah terjadi karena adanya pergeseran
+        paradigma atau <i>paradigm shift</i>.
+      </p>
+      <h2>Definisi dan Unsur Paradigma</h2>
+      <p>
+        Paradigma dalam ilmu sosial-budaya mencakup beberapa unsur utama
+        seperti:
+      </p>
+      <ul>
+        <li>
+          <b>Asumsi dasar:</b> Pandangan tentang objek penelitian yang tidak
+          dipertanyakan kebenarannya.
+        </li>
+        <li><b>Model:</b> Representasi atau analogi gejala sosial-budaya.</li>
+        <li><b>Nilai-nilai:</b> Standar yang digunakan dalam penelitian.</li>
+        <li>
+          <b>Masalah penelitian:</b> Pertanyaan atau hipotesis yang ingin
+          dibuktikan.
+        </li>
+        <li>
+          <b>Konsep-konsep:</b> Istilah yang diberi makna khusus untuk memahami
+          fenomena.
+        </li>
+      </ul>
+
+      <h2>Metode Penelitian</h2>
+      <p>
+        Metode penelitian dalam paradigma sosial-budaya dapat dibagi menjadi:
+      </p>
+      <ul>
+        <li>
+          <b>Metode Kualitatif:</b> Menggunakan wawancara, observasi, dan studi
+          literatur.
+        </li>
+        <li>
+          <b>Metode Kuantitatif:</b> Menggunakan data statistik dan pengujian
+          hipotesis.
+        </li>
+      </ul>
+      <div class="button-container">
+        <button class="button" onclick="showNext(1)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section2">
+      <h2>Analisis dan Representasi</h2>
+      <p>
+        Setelah data dikumpulkan, langkah berikutnya adalah analisis. Analisis
+        dilakukan menggunakan metode yang sesuai dengan jenis data yang
+        diperoleh.
+      </p>
+
+      <h2>
+        Paradigma Penelitian Kuantitatif Sumber:Dr.sukirman.(2021).metode
+        penelitian. Gowa Sulawesi Selatan: Aksara Timur
+      </h2>
+      <p>
+        Paradigma kuantitatif adalah paradigma yang dilandasi oleh filsafat
+        positivisme, dimana tidak mengakui adanya unsur teologi dan juga
+        metafisik. Paradigma yang satu ini meyakini bahwa ilmu pengetahuan
+        merupakan satu- satunya pengetahuan yang valid. Pengetahuan yang
+        dimaksud tersebut yaitu pengetahuan yang diperoleh dari pengalaman yang
+        sudah kita lalui. Dimana pengalaman itu kita rasakan oleh indera kita
+        yang nantinya akan diolah oleh pikiran kita sendiri.Karena berawal dari
+        pengalaman pribadi, maka objek penelitian biasanya tidak jauh dari
+        hubungan dan sebab akibat antara pengalaman yang sudah kita lalui dan
+        fenomena yang ada.
+      </p>
+      <p>
+        Paradigma Penelitian Kualitatif Penelitian kualitatif adalah pendekatan
+        penelitian yang bersifat humanistik karena menempatkan manusia dalam
+        penelitian sebagai subjek utama dalam peristiwa sosial. Dalam hal ini
+        hakikat manusia sebagai subjek memiliki kebebasan berpikir dan
+        menentukan pilihan berdasarkan budaya dan sistem yang diyakini oleh
+        individu masing-masing. Paradigma penelitian kualitatif meyakini bahwa
+        dalam suatu sistem kemasyarakatan terdapat ikatan yang menimbulkan
+        keteraturan. Keteraturan ini terjadi secara alamiah.Oleh karena itu,
+        tugas seorang peneliti sosial adalah mencari dan menemukan keteraturan
+        tersebut. Berkenaan dengan hal itu penelitian kualitatif pada dasarnya
+        adalah satu kegiatan sistematis untuk menemukan teori dalam realitas
+        sosial, bukan menguji teori atau hipotesis.
+      </p>
+      <p>
+        Secara epistemologis paradigma penelitian kualitatif selalu mengakui
+        adanya fakta empiris dilapangan yang dijadikan sumber pengetahuan,
+        tetapi teori yang adatidak dijadikan sebagai tolak ukur verifikasi.
+        Selain itu, penelitian kualitatif juga berlandaskan paradigma
+        constructivism yang berpandangan bahwa pengetahuan itu tidak hanya
+        diperoleh darihasil pengalaman terhadap fakta, tetapi juga merupakan
+        hasil konstruksi pemikiran subjek dari objek yang diteliti. Dengan
+        demikian, peneliti menciptakan secara induktif pengembangan teori atau
+        pola makna (Creswell, 2015).Dalam penelitian kualitatif, proses
+        penelitian menjadi lebih penting daripada hasil penelitian. Oleh karena
+        itu, dalam penelitian kualitatif “proses“ menjadi hal yang harus
+        diperhatikan sebabpeneliti sebagai pengumpul (instrumen). Dengan
+        demikian, peneliti harus mampu menempatkan dirinya pada posisi
+        seobjektif mungkin sehingga data yang dikumpulkan dapat
+        dipertanggungjawabkan.
+      </p>
+      <p>
+        Paradigma penelitian menentukan masalah yang dituju dan tipe penjelasan
+        yang dapat diterima.Paradigma menjadi acuan sebagai dasar bagi setiap
+        peneliti untuk mengungkapkan fakta melalui kegiatan penelitian yang
+        dilakukannya. Pemilihan paradigma dalam riset memiliki implikasi
+        terhadap pemilihan pendekatan, teknik pengumpulan,dan teknik analisis
+        data. Selanjutnya, dijelaskan (Creswell, 2009; Ponterotto, 2005) bahwa
+        paradigma dalam penelitian kualitataif terdiri atas postpositivism,
+        constructivism, interpretivism, dan critical ideological. Dalam
+        paradigma postpositivisme dijelaskanbahwa peneliti tidak dapat
+        memperoleh fakta dari suatu kenyataan apabila peneliti membuat jarak
+        (distance) dengan kenyataan yang ada. Hubungan peneliti dengan realitas
+        harus bersifat interaktif. Oleh karena itu, perlu menggunakan prinsip
+        triangulasi, yaitu penggunaan bermacam-macam teknik dan sumber data.
+      </p>
+      <p>
+        Postpositivisme memiliki ciri-ciri reduksionistis, logis, empiris
+        berorientasi pada sebab dan akibat serta deterministis berdasarkan pada
+        teori a priori. Pendekatan ini sering digunakanoleh para peneliti yang
+        telah terlatih dalam riset kuantitatif. Peneliti postpositivisme
+        mempersepsi penelitian dalam satu rangkaian langkah yang terhubung
+        secara logis. Oleh karena itu, mereka lebih meyakini keragaman
+        perspektif dari partisipan dibandingkan dengan satu realitas tunggal.
+        Persepsi keragaman perspektif akanmendukung teknik pengumpulan dan
+        analisis data secara tepat dan teliti. Dalam hal ini peneliti
+        menggunakan beragam level analisis data demi ketepatan dan ketelitian,
+        menggunakan berbagai program komputer untuk mendukung analisis,
+        mendorongpendekatan validitas, dan menulis kajian kualitatif dalam
+        bentuk laporan ilmiah dengan struktur yang menyerupai artikel
+        kuantitatif (Denzin & Lincoln, 2005). Paradigma
+        constructivism-interpretivism memandang bahwa kenyataan adalah hasil
+        konstruksi atau bentukan dari manusia. Kenyataan itu bersifat ganda dan
+        dibentuk dalam suatukeutuhan. Kenyataan ada karena hasil bentukan dari
+        kemampuan berpikir seseorang. Pengetahuan hasil bentukan manusia tidak
+        bersifat tetap, tetapi berkembang terus. Penelitian kualitatif
+        berlandaskan paradigma constructivism yang berpandangan bahwa
+        pengetahuan tidak hanya merupakan hasil pengalaman terhadap fakta,
+        tetapi juga merupakan hasil konstruksi pemikiran subjek yang
+        diteliti.Pengenalan manusia terhadap realitas sosial berpusat pada
+        subjek dan bukan pada objek. Hal ini menunjukkan bahwa ilmu pengetahuan
+        bukan hasil pengalaman semata, tetapi juga merupakan hasil konstruksi
+        pemikiran. Tujuan dari constructivis untuk bersandar sebanyak mungkin
+        pada pandangan dari para partisipan tentang situasi tertentu. Sering
+        makna subjektifdinegosiasi secara sosial dan historis. Dengan kata lain,
+        ragam realitas dibangun melalui interaksi dalam kehidupan sosial dan
+        melalui norma-norma historis dan kultural yang berlaku dalam kehidupan
+        individu tersebut.
+      </p>
+      <div class="button-container">
+        <button class="button" onclick="showNext(2)">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="container hidden-section fade-in" id="section3">
+      <h2>
+        Paradigma penelitian Sumber : Safrilsyah Syarif, M.Si Firdaus M. Yunus,
+        M.Hum, M.Si
+      </h2>
+      <p>
+        Secara umum paradigma sebagai seperangkat kepercayaan atau keyakinan
+        dasar yang menentukan seseorang dalam bertindak sehari-hari. Untuk
+        melakukan penelitian, seorang peneliti harus melakukan penyelidikan
+        secara sistematis terhadap masalah untuk menemukan jawaban terhadap
+        masalah yang diteliti. Kemudian setiap penyelidikan yang dilakukan akan
+        ditentukan oleh paradigma. Paradigma penelitian akan membawa pemahaman
+        kepada metodologi penelitian yang meliputi metode-metode dan
+        teori-teori. Paradigma secara umum dibicarakan dalam literatur
+        penelitian, ada banyak cara yang digunakan untuk menyelidiki suatu
+        masalah dan menemukan jalan keluar atas masalah tersebut, dan ini semua
+        berhubungan dengan model penelitian.
+      </p>
+      <p>
+        Ada beberapa paradigma yang dapat dicermati dalam penelitian, paradigma
+        tersebut antara lain adalah, positivisme, post positivisme,
+        constructivism, dan critical theory. Perbedaaan keempat paradigma ini
+        bisa di lihat dari cara mereka memandang realitas. Namun demikian
+        keempat paradigma tersebut tidak terlepas dari empat cara dalam
+        memperoleh jawaban dari pertanyaan penelitian yang bersifat
+        epistemologis, ontologis, aksiologis dan metodologis.
+      </p>
+      <li><b>*Paradigma Positivisme</b></li>
+      <p>
+        Tujuan dalam setiap penelitian dan observasi adalah menemukan
+        pengetahuan, yaitu pengetahuan tentang esensi realitas yang ada,
+        bermacam-macam objek penelitian menentukan macam-macam ilmu pengetahuan
+        yang dihasilkannya. Positivisme merupakan aliran yang lahir pada abad ke
+        19 di Perancis, positivisme adalah filsafat yang berpangkal dari apa
+        yang telah diketahui, faktual, dan positif. Aliran ini anti tehadap
+        segala sesuatu yang terkait dengan metafisis, sebab apa yang diketahui
+        secara positif adalah segala yang tampak atau pada gejala-gejala.10
+        Positivisme diperkenalkan oleh Auguste Comte melalui bukunya The Cuorse
+        of Positive Philosophy (1830-1842).
+      </p>
+      <p>
+        Comte menguraikan secara garis besar prinsip-prinsip positivisme yang
+        hingga kini masih banyak digunakan oleh para ilmuan ilmu alam dan ilmu
+        sosial. Salah satu grand theory Comte tentang hukum tiga tahap, yaitu
+        tahap teologis, metafisis, dan tahap ilmiah (tahap positif) sebagai
+        tahap tertinggi dari tahapan perjalanan kehidupan manusia.11 Positivisme
+        kemudian dikembangkan lagi oleh John Stuard Mill melalui karya
+        monumentalnya A System of Logic. Posivisme kemudian diuraikan secara
+        lebih sistematis lagi oleh Emile Durkheim dalam buku Rules of the
+        Sociological Method (1895), yang kemudian menjadi rujukan bagi para
+        peneliti ilmu sosial yang beraliran positivisme. Positivisme
+        menggambarkan pendekatan baru terhadap pengetahuan yang mendahului
+        kehidupan intelektual dalam tahap positif. Ini tampak dari klaim, bahwa
+        sosiologi bukan hanya sebuah disiplin analitis yang ketat melainkan juga
+        sebuah studi sintesis yang tujuannya adalah menghubungkan fenomena
+        sosial dengan keseluruhan organis yang mencakup fenomena sosial. Dalam
+        hal ini Comte menjadi orang pertama sekali menggunakan istilah
+        positivism melalui bukunya The Course Positivisme menggambarkan
+        pendekatan baru terhadap pengetahuan yang mendahului kehidupan
+        intelektual dalam tahap positif. Ini tampak dari klaim, bahwa sosiologi
+        bukan hanya sebuah disiplin analitis yang ketat melainkan juga sebuah
+        studi sintesis yang tujuannya adalah menghubungkan fenomena sosial
+        dengan keseluruhan organis yang mencakup fenomena sosial. Dalam hal ini
+        Comte menjadi orang pertama sekali menggunakan istilah positivism
+        melalui bukunya The Course.
+      </p>
+      <li><b>Paradigma Postpositivisme</b></li>
+      <p>
+        Paradigma positivisme ukuran kebenarannya adalah frekwensi tinggi atau
+        sebagian besar dan bersifat probalistik. Kalau dalam sampel benar maka
+        kebenaran tersebut mempunyai peluang berlaku juga untuk populasi yang
+        lebih besar. Namun dalam paradigma postpositivisme kebenaran didasarkan
+        pada esensi (sesuai dengan hakekat obyek) dan kebenarannya bersifat
+        holistik. Pengertian fakta maupun data dalam filsafat positivisme dan
+        postpossitivisme juga memiliki cakupan yang berbeda. Dalam postivisme
+        fakta dan data terbatas pada sesuatu yang empiris sensual (teramati
+        secara indrawi), sedangkan dalam postpositivisme selain yang empiris
+        sensual juga mencakup apa yang ada di balik yang empirik sensual
+        (fenomena dan nomena). Positivisme menganalisis berdasar data empirik
+        sensual, postpositivisme mencari makna di balik yang empiri sensual.17
+        Kedua aliran filsafat tersebut mendasari bentuk penelitian yang berbeda
+        satu dengan yang lain. Positivisme dalam mengembangkan penelitian
+        berpatron pada paradigma kuantitatif. Sedangkan postpositivisme dalam
+        penelitian berpatron pada paradigma kualitatif. Karakteristik utama
+        penelitian kualitatif dalam paradigma postpositivisme adalah pencarian
+        makna di balik data.
+      </p>
+      <p>
+        Sementara penelitian kuantitatif lebih banyak menggunakan logika
+        hipotetiko verifikatif. Pendekatan tersebut dimulai dengan berpikir
+        deduktif untuk menurunkan hipotesis, kemudian melakukan pengujian di
+        lapangan. Kesimpulan atau hipotesis tersebut ditarik berdasarkan data
+        empiris. Dengan demikian, penelitian kuantitatif lebih menekankan pada
+        indeks-indeks dan pengukuran empiris. Peneliti kuantitatif merasa
+        “mengetahui apa yang tidak diketahui” sehingga desain yang
+        dikembangkannya selalu merupakan rencana kegiatan yang bersifat apriori
+        dan definitive. Berbeda dengan penelitian kuantitatif, penelitian
+        kualitatif lebih banyak ditujukan pada pembentukan teori subtantif
+        berdasarkan konsep-konsep yang timbul dari data empiris. Terlepas dari
+        berbagai asumsi di atas, kehadiran paradigma postpositivisme untuk
+        memberikan reaksi tehadap kelemahan-kelemahan positivisme, yang hanya
+        mengandalkan pengamatan langsung terhadap objek yang diteliti. Secara
+        ontologis aliran ini bersifat critical realism yang memandang bahwa
+        realitas memang ada dalam kenyataan sesuai dengan hukum alam. Namun ada
+        sesuatu yang mustahil bila suatu realitas dapat di lihat secara nyata
+        oleh peneliti. Oleh karena iti secara metodologis pendekatan
+        eksprimental melalui observasi tindaklah cukup, tetapi harus menggunakan
+        bermacam-macam metode,sumber data, penelitian dan berbagai teori. Untuk
+        mengetahui posisi postpositivisme, ada empat alasan yang dapat di lihat,
+        pertama, dimana posisi postpostivisme diantara paradigma ilmu yang lain,
+        apakah ini merupakan bentuk lain dari positivisme yang posisinya lebih
+        lemah atau aliran ini datang setelah positivisme sehingga dinamakan
+        postpositivisme. Kedua, postpositivisme bergantung pada paradigma
+        realisme yang sudah sangat tua dan usang, dugaan ini tidak seutuhnya
+        benar, karena pandangan awal positivisme adalah anti realisme yang
+        menolak adalanya realitas dari suatu teori. Ketiga, banyak
+        postpositivisme yang berpengaruh yang merupakan penganut realisme.
+        Bukankah ini menunjukkan bahwa mereka tidak mengakui adanya kenyataan,
+        dan setiap masyarakat membentuk realitas mereka sendiri. Keempat, karena
+        pandangan bahwa persepsi orang adalah benar, maka tidak ada sesuatu yang
+        benar-benar pasti. Bukankah postpositivisme menolak kriteria
+        objektivitas.
+      </p>
+      <div class="button-container">
+        <button class="button" onclick="goBack()">Kembali ke Awal</button>
+      </div>
+    </div>
+
+    <script>
+      function showNext(section) {
+        document.getElementById('section' + section).style.display = 'none';
+        document.getElementById('section' + (section + 1)).style.display =
+          'block';
+        document
+          .getElementById('section' + (section + 1))
+          .classList.add('show');
+      }
+
+      function goBack() {
+        document.querySelectorAll('.container').forEach((el, index) => {
+          el.style.display = index === 0 ? 'block' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>
